@@ -1,0 +1,11 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    visibility: hidden;
+    display: none;
+}
+
+.title {
+    font-size: 10vw;
+}

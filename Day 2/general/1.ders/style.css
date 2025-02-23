@@ -1,0 +1,19 @@
+body {
+    background-color: white;
+    padding: 20px;
+}
+p#main-title {
+    font-size: 100px;
+    color: green;
+}
+p.title {
+    color: rgb(247, 82, 82);
+    font-size: 50px;
+}
+
+p.title {
+    color: rgb(82, 151, 247);
+}
+p {
+    color: black;
+}

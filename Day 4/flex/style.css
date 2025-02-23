@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
