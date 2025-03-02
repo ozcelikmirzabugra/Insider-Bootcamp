@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geri Sayım Aracı</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Geri Sayım Aracı</h1>
+      <div class="input-container">
+        <label for="countdownInput"
+          >Geri sayımı başlatmak istediğiniz süreyi saniye cinsinden
+          yazın:</label
+        >
+        <input
+          type="number"
+          id="countdownInput"
+          placeholder="Saniye girin"
+          min="1"
+        />
+      </div>
+      <div class="button-container">
+        <button id="startBtn">Başlat</button>
+        <button id="resetBtn">Sıfırla</button>
+      </div>
+      <p id="timerDisplay">0</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

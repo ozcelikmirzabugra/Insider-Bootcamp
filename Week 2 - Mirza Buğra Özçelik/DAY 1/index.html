@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mirz Shop - Two Column Layout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Alışveriş Sepetiniz</h1>
+      <div class="columns">
+        <div class="column left-column">
+          <div class="section-box user-info">
+            <h2>Kullanıcı Bilgileri</h2>
+            <label for="name">Adınız nedir? :</label>
+            <input type="text" id="name" placeholder="Ad" />
+            <label for="age">Yaşınız kaç? :</label>
+            <input type="number" id="age" placeholder="Yaş" />
+            <label for="profession">Mesleğiniz nedir?: </label>
+            <input type="text" id="profession" placeholder="Meslek" />
+            <button id="saveUserInfo">Kaydet</button>
+          </div>
+          <div class="section-box product-info">
+            <h2>Ürün Ekleme</h2>
+            <label for="product-name"
+              >Sepete eklemek istediğiniz ürünün adını yazın:</label
+            >
+            <input type="text" id="product-name" placeholder="Ürün adı" />
+            <label for="product-price">Ürünün Fiyatı:</label>
+            <input type="number" id="product-price" placeholder="Ürün fiyatı" />
+            <button id="add-product">Ürün Ekle</button>
+          </div>
+        </div>
+        <div class="column right-column">
+          <div class="section-box cart-info">
+            <h2>Sepetiniz</h2>
+            <ul id="cart-list"></ul>
+            <p>Toplam Fiyat: <span id="total-price"></span> TL</p>
+          </div>
+          <div class="section-box remove-info">
+            <h2>Ürün Çıkar</h2>
+            <label for="remove-product">Ürün Çıkar:</label>
+            <input
+              type="text"
+              id="remove-product"
+              placeholder="Çıkarılacak ürün adı"
+            />
+            <button id="remove-product-btn">Ürün Çıkar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

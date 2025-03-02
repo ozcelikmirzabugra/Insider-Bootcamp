@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #0d47a1;
+  --accent-color: #00bcd4;
+  --bg-color: #121212;
+  --container-bg: #1e1e1e;
+  --input-bg: #2a2a2a;
+  --text-color: #e0e0e0;
+  --label-color: #aaaaaa;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --transition: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.wrapper {
+  background: var(--container-bg);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px var(--shadow-color);
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 10px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: var(--label-color);
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: var(--input-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow var(--transition);
+}
+
+input[type="number"]::placeholder {
+  color: #888888;
+}
+
+input[type="number"]:focus {
+  box-shadow: 0 0 5px var(--accent-color);
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+
+#startBtn {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+#startBtn:hover {
+  background: #1976d2;
+  transform: scale(1.05);
+}
+
+#resetBtn {
+  background: #e53935;
+  color: #ffffff;
+}
+
+#resetBtn:hover {
+  background: #d32f2f;
+  transform: scale(1.05);
+}
+
+#timerDisplay {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: var(--accent-color);
+}
