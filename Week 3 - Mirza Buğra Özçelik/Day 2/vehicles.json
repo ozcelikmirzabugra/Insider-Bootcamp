@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Tesla Model S",
+    "price": "1,200,000",
+    "link": "https://www.tesla.com/models"
+  },
+  {
+    "name": "BMW M4 Coupe",
+    "price": "950,000",
+    "link": "https://www.bmw.com/m4coupe"
+  },
+  {
+    "name": "Mercedes-Benz G63 AMG",
+    "price": "1,800,000",
+    "link": "https://www.mercedes-amg.com/g63"
+  },
+  {
+    "name": "Ducati Panigale V4",
+    "price": "480,000",
+    "link": "https://www.ducati.com/panigale-v4"
+  },
+  {
+    "name": "Yamaha YZF-R1",
+    "price": "320,000",
+    "link": "https://www.yamaha-motor.com/yzf-r1"
+  },
+  {
+    "name": "Ferrari F8 Tributo",
+    "price": "4,000,000",
+    "link": "https://www.ferrari.com/f8-tributo"
+  },
+  {
+    "name": "Lamborghini Huracan EVO",
+    "price": "5,500,000",
+    "link": "https://www.lamborghini.com/huracan-evo"
+  },
+  {
+    "name": "Porsche 911 Turbo S",
+    "price": "3,200,000",
+    "link": "https://www.porsche.com/911-turbo-s"
+  },
+  {
+    "name": "Honda CBR1000RR-R",
+    "price": "360,000",
+    "link": "https://www.honda.com/cbr1000rr-r"
+  },
+  {
+    "name": "Bugatti Chiron",
+    "price": "65,000,000",
+    "link": "https://www.bugatti.com/chiron"
+  }
+]

@@ -1,0 +1,114 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1b1b1b, #2a2a2a);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+#applyBtn {
+  padding: 12px 30px;
+  background: #ff7b00;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(255, 123, 0, 0.3);
+}
+
+#applyBtn:hover {
+  background: #e66900;
+  box-shadow: 0px 6px 14px rgba(255, 123, 0, 0.5);
+}
+
+#form-container {
+  display: none;
+  background: #2a2a2a;
+  padding: 25px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: left;
+  box-shadow: 0px 8px 20px rgba(255, 123, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #ff7b00;
+}
+
+.input-group {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ff7b00;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #555;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #3a3a3a;
+  color: #fff;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff7b00;
+  outline: none;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 3px;
+  display: block;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #ff7b00;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e66900;
+}
+
+#closeBtn {
+  background: #d32f2f;
+  margin-top: 10px;
+}
+
+#success-message {
+  display: none;
+  margin-top: 15px;
+  padding: 12px;
+  background: #4caf50;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+}

@@ -1,0 +1,71 @@
+$(document).ready(function () {
+    let products = [
+        {"name": "Sports Car", "price": "$45,000", "details": "600 HP, 0-100 km/h in 3.2 seconds, carbon fiber body."},
+        {"name": "Electric Motorcycle", "price": "$7,500", "details": "Silent motor, 250 km range, fast charging feature."},
+        {"name": "Off-Road Jeep", "price": "$32,000", "details": "4x4 drive, 500 horsepower, terrain modes."},
+        {"name": "Luxury Camper Van", "price": "$80,000", "details": "Fully equipped interior, solar panels, spacious living area."},
+        {"name": "Hybrid SUV", "price": "$38,000", "details": "Fuel-efficient engine, large interior, 7-seater capacity."},
+        {"name": "Electric Scooter", "price": "$900", "details": "80 km range, foldable design, smart connectivity."},
+        {"name": "Automatic ATV", "price": "$10,500", "details": "Suitable for off-road driving, powerful engine, durable tires."},
+        {"name": "Classic American Car", "price": "$75,000", "details": "V8 engine, retro design, collector's model."}
+    ];
+
+    let productList = $('<div id="product-list"></div>').css({ 
+        "display": "flex", "gap": "20px", "justifyContent": "center",
+        "flexWrap": "wrap", "padding": "20px"
+    });
+
+    products.forEach(product => {
+        let productCard = $('<div class="product-card"></div>').css({
+            "background": "#1e1e1e", "color": "#fff", "padding": "20px",
+            "borderRadius": "10px", "width": "220px", "textAlign": "center",
+            "boxShadow": "0 4px 8px rgba(0, 0, 0, 0.3)"
+        });
+
+        let name = $('<h3></h3>').text(product.name);
+        let price = $('<p></p>').text(product.price).css({"color": "#ff4500", "fontWeight": "bold"});
+
+        let button = $('<button>Details</button>').css({
+            "background": "#ff4500", "border": "none", "color": "white",
+            "padding": "10px 15px", "borderRadius": "5px", "cursor": "pointer",
+            "marginTop": "10px", "fontSize": "14px"
+        }).click(function () {
+            showPopup(product);
+        });
+
+        productCard.append(name, price, button);
+        productList.append(productCard);
+    });
+
+    $('body').append(productList);
+
+    let popup = $('<div id="popup"></div>').css({
+        "position": "fixed", "top": "50%", "left": "50%",
+        "transform": "translate(-50%, -50%)", "background": "#292929",
+        "color": "#fff", "padding": "25px", "borderRadius": "10px",
+        "boxShadow": "0px 4px 15px rgba(0, 0, 0, 0.5)",
+        "display": "none", "textAlign": "center", "width": "300px"
+    });
+
+    let popupContent = $('<div id="popup-content"></div>');
+
+    let closeButton = $('<button>Close</button>').css({
+        "background": "#ff0000", "border": "none", "color": "white",
+        "padding": "10px 15px", "borderRadius": "5px", "cursor": "pointer",
+        "marginTop": "10px", "fontSize": "14px"
+    }).click(function () {
+        popup.fadeOut();
+    });
+
+    popup.append(popupContent, closeButton);
+    $('body').append(popup);
+
+    function showPopup(product) {
+        popupContent.html(`
+            <h2>${product.name}</h2>
+            <p>${product.details}</p>
+            <p><strong>${product.price}</strong></p>
+        `);
+        popup.fadeIn();
+    }
+});
