@@ -1,0 +1,37 @@
+Stok Kontrol Hatası
+
+Hata: if (product.stock <= quantity) { koşulu yanlış.
+
+Sorun: Kullanıcı, stok kadar ürünü de ekleyemiyor.
+
+Çözüm: if (product.stock < quantity) { olarak değiştirildi.
+
+Toplam Tutar Yanlış Hesaplanıyor
+
+Hata: return sum + item.price;
+
+Sorun: quantity çarpımı unutulduğu için toplam yanlış hesaplanıyor.
+
+Çözüm: return sum + (item.price * item.quantity); olarak düzeltildi.
+
+Ürün Çıkarıldığında Stok Güncellenmiyor
+
+Hata: product.stock += 1;
+
+Sorun: Kullanıcı bir üründen 3 adet alıp sildiğinde yalnızca +1 ekleniyor.
+
+Çözüm: product.stock += item.quantity; olarak güncellendi.
+
+Hata Mesajları Birikiyor
+
+Hata: errorElement.textContent += message + '\n';
+
+Sorun: Hata mesajları birikerek karışıklık yaratıyor.
+
+Çözüm: errorElement.textContent = message; olarak değiştirildi.
+
+Sepete Ekleme Sonrası Stok Güncellenmiyor
+
+Hata: Kullanıcı sepete ürün eklediğinde, stok görünümü güncellenmiyor.
+
+Çözüm: document.dispatchEvent(new Event('stockUpdate')); çağrısı addItem() fonksiyonuna eklendi.
